@@ -1,0 +1,49 @@
+.down-dialog {
+  &.mode-mobile {
+    .select-size-container {
+      margin-top: 10px !important;
+    }
+    .down-icon {
+      transform: translateY(0) !important;
+    }
+  }
+  .ant-modal {
+    width: 80vw !important;
+    max-width: 700px;
+  }
+  .down-dialog-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    position: relative;
+
+    .down-img {
+      max-width: 100%;
+      max-height: 60vh;
+    }
+
+    .down-icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    .select-size-container {
+      text-align: left;
+
+      .size-row {
+        margin-top: 5px;
+
+        .type-icon {
+          color: #999;
+          padding-right: 10px;
+
+          &.actived {
+            color: #40a9ff;
+          }
+        }
+      }
+    }
+  }
+}

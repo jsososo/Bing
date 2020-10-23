@@ -1,0 +1,51 @@
+.about-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .about-content {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.1);
+    filter: blur(10px) brightness(60%);
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .text-content {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh auto;
+    color: #fff;
+    background: #0004;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    word-break: break-all;
+
+    h2 {
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+      .iconfont {
+        font-size: 24px;
+        color: #fff;
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+
+    a {
+      color: #40a9ff;
+    }
+
+    .img-pay {
+      width: 150px;
+      margin: 15px;
+    }
+  }
+}
