@@ -20,7 +20,7 @@ app.prepare().then(() => {
     } else {
       handle(req, res, parsedUrl)
     }
-  }).listen(3001, (err) => {
+  }).listen(3002, (err) => {
     if (err) throw err;
     updateData(true);
     console.log('> Ready on http://localhost:3001')
