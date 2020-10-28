@@ -2,15 +2,25 @@
   width: 100vw;
   height: 100vh;
 
-  &.mobile-mode .bottom-info {
-    transform: translateY(0) !important;
-    opacity: 1 !important;
-    height: 10vw !important;
+  &.mobile-mode {
+    .page-icon {
+      top: 50vh !important;
 
-    .iconfont {
-      font-size: 6vw !important;
-      line-height: 10vw !important;
-      margin: 0 3vw !important;
+      &.icon-left {
+        left: 10px !important;
+      }
+      &.icon-right {
+        right: 10px !important;
+      }
+    }
+    .bottom-info {
+      height: 10vw !important;
+
+      .iconfont {
+        font-size: 6vw !important;
+        line-height: 10vw !important;
+        margin: 0 3vw !important;
+      }
     }
   }
 

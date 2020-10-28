@@ -96,10 +96,10 @@ export default function date({img = {}, timeout, nextKey}) {
   return img.date ? (
     <Spin spinning={loading} size="large">
       <div className={`detail-page ${isMobile && 'mobile-mode'}`} onMouseMove={onMouseMove}>
-        <img className="loading-img" ref={loadingImg} src={`//cn.bing.com${img.url}`} onLoad={() => updateLoading(false)}/>
+        <img className="loading-img" ref={loadingImg} src={`//cn.bing.com${img.urlbase}_${isMobile ? '768x1280' : '1920x1080'}.jpg`} onLoad={() => updateLoading(false)}/>
         <div
           className="img-content-box"
-          style={{backgroundImage: `url(//cn.bing.com${img.url})`}}
+          style={{backgroundImage: `url(//cn.bing.com${img.urlbase}_${isMobile ? '768x1280' : '1920x1080'}.jpg)`}}
         >
           {
             [{ key: 'prev', arrow: 'left'}, { key: 'next', arrow: 'right'}]

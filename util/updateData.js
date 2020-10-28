@@ -8,7 +8,7 @@ const getData = async () => {
     const { imgs } = await jsonfile.readFile('bing_data/allData.json')
       .catch(() => ({ imgs: [] }))
 
-    imgArr = imgs;
+    imgArr = imgs.sort((a, b) => a.date - b.date);
     imgMap = {};
 
     imgArr.forEach((o, i) => {
