@@ -20,7 +20,8 @@ export default function about({img = {}}) {
       </div>
       <div className="text-content">
         <h2>
-          关于 <a href="/">必应壁纸</a><a target="_blank" href=" "><a href="https://github.com/jsososo/Bing" target="_blank" className="icon-github iconfont"/></a>
+          <a href="/" className="iconfont icon-bing" />
+          关于 <a href="/">必应壁纸</a><a target="_blank" href="/"><a href="https://github.com/jsososo/Bing" target="_blank" className="icon-github iconfont"/></a>
         </h2>
         <p> Bing 壁纸很好看不是嘛，如果有一个能回顾之前每一天的必应壁纸就更好啦，所以就诞生了这个网站～ </p>
         <p> 后端目前还没开源，因为比较简单，是一个 nodejs 项目，每天定时从

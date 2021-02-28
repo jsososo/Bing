@@ -7,16 +7,17 @@ import DownDialog from "../components/downDialog";
 import Error from 'next/error';
 
 export async function getServerSideProps(context) {
-  const {imgMap, imgArr, tomorrow} = global;
+  const {imgArr, tomorrow} = global;
   const { date } = context.query;
   let key = date;
   if (date === 'random') {
     const index = Math.floor(Math.random() * imgArr.length);
+
     key = imgArr[index].date;
   }
   return {
     props: {
-      img: imgMap[key] || {},
+      img: imgArr[key] || {},
       timeout: tomorrow - moment() + 5000,
       nextKey: tomorrow.format('YYYYMMDD')
     }
@@ -127,6 +128,7 @@ export default function date({img = {}, timeout, nextKey}) {
 
           <div className={`bottom-info ${showBottom && 'actived'}`}>
             <div className="icon-list">
+              <a href="/" className="iconfont icon-bing" />
               <a href="/about" className="iconfont icon-about"/>
               <div className="iconfont icon-download" onClick={() => setDownDialogVisible(true)} />
               <a href="/random" className="iconfont icon-touzi"/>

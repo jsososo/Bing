@@ -16,7 +16,7 @@ app.prepare().then(() => {
     const {pathname, query} = parsedUrl
 
     if (pathname === '/') {
-      app.render(req, res, `/${moment().format('YYYYMMDD')}`, query);
+      app.render(req, res, '/index', query);
     } else {
       handle(req, res, parsedUrl)
     }
